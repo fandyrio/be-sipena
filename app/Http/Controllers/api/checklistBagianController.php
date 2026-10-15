@@ -985,7 +985,7 @@ class checklistBagianController extends Controller
             }
         }else if((int)$periode === 2){
             for($x=0;$x<2;$x++){
-                $bulan=($x*6+5) < 10 ? '0'.($x*6+5) : ($x*6+5);
+                $bulan=($x*6+3) < 10 ? '0'.($x*6+3) : ($x*6+3);
                 $edoc=new Edoc_indikator;
                 $edoc->id_master=$id_master;
                 $edoc->edoc=null;
